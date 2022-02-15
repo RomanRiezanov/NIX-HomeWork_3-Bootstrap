@@ -8,7 +8,7 @@ body {
   font-weight: bold;
 }
 
-.goals__block {
+.profile-block, .goals__block {
   background-color: #ffffff;
   height: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -25,21 +25,6 @@ body {
 .registration-block .btn, .registration-block .form-group .form-control {
   height: 60px;
   border-radius: 40px;
-}
-
-.navbar-container {
-  background-color: #ffffff;
-}
-
-.navbar-light .navbar-toggler {
-  border: 0;
-}
-
-.nav-flex-icons {
-  flex-direction: row;
-}
-.nav-flex-icons .nav-item {
-  margin-right: 15px;
 }
 
 .goals__block .icon {
@@ -116,38 +101,6 @@ body {
   margin-left: 15px;
 }
 
-@media (min-width: 768px) {
-  .navbar-container {
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-    height: 100vh;
-  }
-
-  .navbar-container .navbar {
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .navbar-container .navbar-collapse {
-    align-items: flex-start;
-  }
-
-  .navbar-container .navbar-nav {
-    flex-direction: column;
-  }
-}
-@media (max-width: 768px) {
-  .registration-block div {
-    justify-content: center;
-  }
-  .registration-block .author-block {
-    display: none;
-  }
-}
 .registration-block {
   border: 20px solid #3a4efd;
 }
@@ -195,13 +148,126 @@ body {
   background-color: #2C2A91;
 }
 
+.profile-block {
+  padding: 0;
+  height: auto;
+  margin: 10px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.profile-block img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 3%;
+}
+.profile-block .btn {
+  margin-bottom: 20px;
+}
+.profile-block .profile-block-header {
+  background-color: #e6e7e7;
+}
+.profile-block .profile-block-content {
+  margin-bottom: 25px;
+}
+.profile-block .todo-list-title {
+  padding: 20px 20px;
+  font-size: 20px;
+  margin-left: 0;
+  border-bottom: 2px solid #DCDCDC;
+}
+.profile-block .profile-block-text {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3% 5%;
+  color: #7a7979;
+}
+.profile-block .progress {
+  margin: 0 auto;
+  width: 90%;
+  height: 0.5rem;
+}
+.profile-block .progress-bootstrap {
+  background-color: #E32636;
+}
+.profile-block .progress-sass {
+  background-color: #FFCF40;
+}
+.profile-block .progress-pseudoclasses {
+  background-color: #30D5C8;
+}
+.profile-block .progress-html {
+  background-color: #34C924;
+}
+.profile-block .form-block {
+  margin: 0 auto;
+}
+.profile-block .form-block .form-row {
+  justify-content: center;
+}
+.profile-block .form-group .form-control {
+  width: 90%;
+  height: 50px;
+  margin: 0 20px;
+}
+.profile-block .form-group .profile-block-text {
+  padding: 10px 20px;
+}
+.profile-block .form-group .btn {
+  width: auto;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .row {
+  margin: 0;
+}
+
+.content-container {
+  background-color: #DCDCDC;
+  padding: 0 5%;
+}
+.content-container .h2 {
+  margin: 10px 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.nav-flex-icons {
+  flex-direction: row;
+}
+.nav-flex-icons .nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a9acad;
+}
+
 .footer {
-  background-color: #dfdfdf;
+  background-color: #DCDCDC;
   height: 100px;
   font-size: 18px;
   color: #a9acad;
   font-weight: bold;
   vertical-align: 0%;
+}
+
+@media (max-width: 768px) {
+  .registration-block div {
+    justify-content: center;
+  }
+  .registration-block .author-block {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
